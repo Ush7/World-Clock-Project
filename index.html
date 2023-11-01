@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock USH</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -16,14 +18,14 @@
         <option value="cities">New York</option>
         <option value="cities">Beijing</option>
       </select>
-      <div class="city">
+      <div class="city" id="bangkok">
         <div>
           <div class="cityName">Bangkok</div>
           <div class="date">November 2, 2023</div>
         </div>
         <div class="time">1:26:45 <small>AM</small></div>
       </div>
-      <div class="city">
+      <div class="city" id="london">
         <div>
           <div class="cityName">London</div>
           <div class="date">November 1, 2023</div>
