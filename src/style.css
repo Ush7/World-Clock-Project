@@ -28,9 +28,9 @@ select {
 
 .city {
   display: flex;
-  justify-content: space-between;
   margin-top: 15px;
   padding-bottom: 20px;
+  justify-content: space-between;
   border-bottom: 1px dashed rgb(222, 220, 220);
 }
 .city:last-child {
