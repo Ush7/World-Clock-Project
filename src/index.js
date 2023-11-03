@@ -21,6 +21,16 @@ function updateTime() {
       "h:mm:ss [<small>]A[<small>]"
     );
   }
+  let losAngelesElement = document.querySelector("#losAngeles");
+  if (losAngelesElement) {
+    let losAngelesDateElement = losAngelesElement.querySelector(".date");
+    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
+    let losAngelesTime = moment().tz("America/Los_Angeles");
+    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM D, YYYY");
+    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+      "h:mm:ss [<small>]A[<small>]"
+    );
+  }
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
@@ -38,8 +48,9 @@ function updateCity(event) {
     </div>
     <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
     "A"
-  )}<small></div>
- </div>`;
+  )}</small></div>
+ 
+ </div> <a href = "index.html" id ="linkBack"> ↩ BACK</a>`;
 }
 
 updateTime();
